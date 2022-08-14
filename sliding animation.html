@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+
+		}
+		.container{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 40%;
+			/*border: 5px solid;*/
+			overflow: hidden;
+			height: 100%;
+			transform: translate(-50%,-50%);
+
+	}	
+
+		.img-content{
+			width: 100%;
+			display: flex;
+			animation: slide 8s infinite;
+	}
+		img{
+			width: 100%;
+		}
+		@keyframes slide{
+			0%{
+				transform: translate(0%);
+
+			}
+			25%{
+				transform: translate(0);
+			}
+			30%{
+				transform: translate(-100%);
+			}
+			50%{
+				transform: translate(-100%);
+			}
+			55%{
+				transform: translate(-200%);
+			}
+			75%{
+				transform: translate(-200%);
+			}
+			80%{
+				transform: translate(-300%);
+			}
+			100%{
+				transform: translate(-350%);
+
+			}
+		}
+
+	</style>
+	
+</head>
+<body>
+<div class="container">
+	<div class="img-content">
+		<img src="1.jpeg">
+		<img src="2.jpg">
+		<img src="3.jpg">
+		<img src="4.jpg">
+		<img src="5.jpg">
+		
+		
+	</div>
+	
+</div>
+</body>
+</html>
